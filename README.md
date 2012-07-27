@@ -1,12 +1,16 @@
 # nsnotify
 
-TODO: Write a gem description
+Uses the built-in OS X Mountain Lion Notification Center to display messages.
+It uses a nice app by [Eloy Durán](https://github.com/alloy/terminal-notifier)
+that gives you command line access to the service.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'nsnotify'
+```ruby
+gem 'nsnotify'
+```
 
 And then execute:
 
@@ -18,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'nsnotify'
+
+# Use the notify method
+Nsnotify.notify "Testing!", "Can you see me?!"
+
+# Or one of the other convenience methods
+# (success, error, warning, pending, info, broken)
+Nsnotify.success "Yeah if this works!"
+Nsnotify.error "Did something go wrong?!?"
+
+# You can set the title to your app's name
+# instead of that lame Nsnotify.
+Nsnotify.app_name = "MyApp"
+Nsnotify.success "Yeah, see me?!"
+```
+
+## Todo
+
+1. Integration in Guard/Watchr and stuff.
 
 ## Contributing
 
