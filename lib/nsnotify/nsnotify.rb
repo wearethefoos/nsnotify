@@ -1,4 +1,4 @@
-module Roar
+module Nsnotify
   vendor = File.expand_path('../../../vendor', __FILE__)
   ICONS  = File.expand_path('../icons', __FILE__)
   TERMINAL_NOTIFICATION_BIN = File.join(vendor, 'terminal-notifier_v1.0/terminal-notifier.app/Contents/MacOS/terminal-notifier')
@@ -35,7 +35,7 @@ module Roar
     end
 
     def app_name
-      @app_name || "Roar"
+      @app_name || "Nsnotify"
     end
 
     private
@@ -46,5 +46,5 @@ module Roar
   end
 end
 
-Roar.use = true
-Roar.app_bundle_identifier = 'com.googlecode.iterm2'
+Nsnotify.use = true
+Nsnotify.app_bundle_identifier = 'com.googlecode.iterm2'
