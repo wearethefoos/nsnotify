@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/Nsnotify/version', __FILE__)
+require File.expand_path('../lib/nsnotify/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Wouter de Vos"]
