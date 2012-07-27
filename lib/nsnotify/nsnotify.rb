@@ -34,4 +34,4 @@ module Nsnotify
 end
 
 Nsnotify.use = true
-Nsnotify.app_bundle_identifier = 'com.googlecode.iterm2'
+Nsnotify.app_bundle_identifier = 'com.apple.Terminal'
