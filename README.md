@@ -39,9 +39,18 @@ Nsnotify.app_name = "MyApp"
 Nsnotify.success "Yeah, see me?!"
 ```
 
-## Todo
+## Guard
 
-1. Integration in Guard/Watchr and stuff.
+I added a pull request for [Guard](https://github.com/guard/guard/pull/311) integration,
+so you will have all your Guard notifications through the Notification Center by having
+the following in your Gemfile:
+
+```ruby
+group :development, :test do
+  gem 'guard'
+  gem 'nsnotify'
+end
+```
 
 ## Contributing
 
