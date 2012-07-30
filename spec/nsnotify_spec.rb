@@ -9,6 +9,7 @@ describe Nsnotify do
 
   describe "#notify" do
     it "should notify.." do
+      Nsnotify.app_name = "Rspec"
       Nsnotify.notify "Nsnotify!", "Can you see my tongue?!"
       sleep 2
       Nsnotify.success "Yeah if this works!"
