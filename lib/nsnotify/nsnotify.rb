@@ -58,5 +58,4 @@ module Nsnotify
   end
 end
 
-Nsnotify.use = true
 Nsnotify.app_bundle_identifier = 'com.apple.Terminal'
