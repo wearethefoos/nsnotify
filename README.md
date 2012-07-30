@@ -52,6 +52,18 @@ group :development, :test do
 end
 ```
 
+## Notification Click Action
+
+The default onclick behavior for a notification is open/focus `Terminal.app`. If you want to
+change that to another terminal emulator you can change the `app bundle identifier`:
+
+```ruby
+# Focus iTerm2 when clicking a message.
+Nsnotify.app_bundle_identifier = 'com.googlecode.iterm2'
+```
+
+I put it in `spec_helper.rb`, and it works fine with Guard and Spork.
+
 ## Contributing
 
 1. Fork it
