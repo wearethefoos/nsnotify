@@ -1,3 +1,21 @@
+# DEPRECATED
+
+This gem is deprecated. Please use [`terminal-notifier-guard`](https://github.com/Springest/terminal-notifier-guard).
+Install it manually
+
+```
+$ gem install terminal-notifier-guard
+```
+
+Or put it in your Gemfile
+
+```ruby
+group :development do
+  gem 'guard'
+  gem 'terminal-notifier-guard'
+end
+```
+
 # nsnotify
 
 Uses the built-in OS X Mountain Lion Notification Center to display messages.
